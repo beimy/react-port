@@ -9,8 +9,18 @@
     }
 }
 
-/* @layer components {
+@layer components {
+    .contact-input {
+        @apply h-[50px] bg-slate-600 text-base border border-purple-800 px-5 w-full m-1
+    }
 
-} */
+    .contact-li {
+        @apply overflow-hidden w-full
+    }
+
+    .contact-li-half {
+        @apply min-w-[49%] block float-left overflow-hidden
+    }
+}
 
 

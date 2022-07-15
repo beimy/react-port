@@ -50,7 +50,7 @@ function Single() {
                         <p>Technologies Used:</p>
                         <ul className="flex px-2">
                             {project.techs.map(tech => (
-                                <li className="px-1">{tech}</li>
+                                <li className="px-1 border-l border-1">{tech}</li>
                             ))}
                         </ul>
                     </div>
