@@ -11,7 +11,7 @@ function App() {
     <div>
       <Nav>
       </Nav>
-      <main className='flex flex-col min-h-screen'>
+      <main className='flex flex-col align-middle min-h-screen'>
         <About></About>
         <Portfolio></Portfolio>
         <Contact></Contact>

@@ -21,6 +21,23 @@
     .contact-li-half {
         @apply min-w-[49%] block float-left overflow-hidden
     }
+
+    .skewed-border-right {
+        -webkit-transform: skewX(-10deg);
+        -moz-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+        transform: skewX(-10deg);
+        @apply border-purple-800 border
+    }
+
+    .skewed-border-left {
+        -webkit-transform: skewX(10deg);
+        -moz-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        transform: skewX(10deg);
+        @apply border-purple-800 border
+      
+    }
 }
 
 

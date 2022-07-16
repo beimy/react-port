@@ -30,9 +30,9 @@ function Single() {
     ]
 
     return(
-        <div className="container columns-2 m-5 mt-20 min-h-full">
+        <div className="container columns-2 m-36 mt-20 min-h-fit">
             {projects.map(project => (
-                <article className="my-5">
+                <article className="mb-16">
                     <div className="flex align-middle">
                         <img
                             src={require(`../../assets/${project.pic}`)}
