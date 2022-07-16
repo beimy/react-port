@@ -8,7 +8,7 @@ function Portfolio() {
 
             <div className="flex px-3 py-3">
                 <a href="https://github.com/beimy/photo-port">
-                    <img className="max-w-2xl p-2 ml-24 skewed-border-right" 
+                    <img className="max-w-2xl p-2 ml-36 skewed-border-right" 
                         src={require(`../../assets/ohsnap_screenshot.PNG`)}></img>
                 </a>
                 <div className="flex flex-wrap flex-col px-5 mb-10 self-center">
