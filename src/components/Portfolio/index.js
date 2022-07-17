@@ -9,7 +9,7 @@ function Portfolio() {
             <h2 ref={titleRef} className="bg-gray-900 ml-10 text-7xl -top-12 relative inline-block">Portfolio</h2>
 
             <div className="flex px-3 py-3">
-                <a href="https://github.com/beimy/photo-port">
+                <a href="https://github.com/beimy/photo-port" target={'_blank'}>
                     <img className="max-w-2xl p-2 ml-36 skewed-border-right" 
                         src={require(`../../assets/ohsnap_screenshot.PNG`)}></img>
                 </a>
@@ -28,7 +28,7 @@ function Portfolio() {
                     that connects to a MongoDB database via mongoose.js. The server contains an api that simulates a basic social media application. Features <br/>
                     include creating new users, creating links between users (friends), making posts (thoughts), commenting on posts(reactions).</p>
                 </div>
-                <a href="https://github.com/beimy/tech-blog">
+                <a href="https://github.com/beimy/tech-blog" target={'_blank'}>
                     <img className="max-w-2xl p-2 ml-2 skewed-border-left" 
                         src={require(`../../assets/rabbithole_screenshot.PNG`)}></img>
                 </a>

@@ -26,7 +26,10 @@ function App() {
   function renderSwitch(currentSection) { 
     switch(currentSection) {
       case 'About':
-        return <About></About>;
+        return <About
+        setCurrentSection={setCurrentSection}
+        setContactSelected={setContactSelected}
+        ></About>;
       case 'Portfolio':
         return <Portfolio></Portfolio>;
       case 'Resume':

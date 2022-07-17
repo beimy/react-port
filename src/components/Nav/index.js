@@ -12,7 +12,7 @@ function Nav(props) {
 
     return(
         <header className="flex flex-wrap justify-between px-1 pb-1 border-b-4 border-purple-800">
-            <a className="pl-8 py-3" data-testid='link' href="/">
+            <a className="pl-8 py-3" data-testid='link' href="/react-port/">
                 <span className="text-purple-800 text-5xl" data-testid='home' onClick={() => setContactSelected(false)}>Aaron Rones</span>
             </a>
             <nav className="flex align-middle float-right">
