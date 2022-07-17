@@ -27,8 +27,8 @@ function Resume() {
                 </ul>
             </div>
             <div className=" relative right-20">
-                <span>Download my full resume 
-                    <a download={require('../../assets/Resume_AaronRones-WebDev.pdf')}> here</a>
+                <span className="text-xl border-b border-purple-800">Download my full resume 
+                    <a className=" font-bold" href={require('../../assets/Resume_AaronRones-WebDev.pdf')} download='AaronRones_Resume_WebDev.pdf'> here</a>
                 </span>
             </div>
         </div>

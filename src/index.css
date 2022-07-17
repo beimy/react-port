@@ -11,6 +11,10 @@
     a {
         @apply cursor-pointer;
     }
+
+    a:hover {
+        @apply text-purple-800
+    }
 }
 
 @layer components {
@@ -40,7 +44,10 @@
         -ms-transform: skewX(10deg);
         transform: skewX(10deg);
         @apply border-purple-800 border
-      
+    }
+
+    .navActive {
+        @apply text-purple-800
     }
 }
 
