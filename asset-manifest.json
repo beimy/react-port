@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-port/static/css/main.0faf2273.css",
-    "main.js": "/react-port/static/js/main.c95af23f.js",
+    "main.css": "/react-port/static/css/main.9cdd46fc.css",
+    "main.js": "/react-port/static/js/main.61916a27.js",
     "static/js/787.510e8dec.chunk.js": "/react-port/static/js/787.510e8dec.chunk.js",
     "static/media/ohsnap_screenshot.PNG": "/react-port/static/media/ohsnap_screenshot.7663ba2efefba1b40960.PNG",
     "static/media/store-backend_screenshot.PNG": "/react-port/static/media/store-backend_screenshot.77def1d25350f25f9272.PNG",
@@ -13,12 +13,12 @@
     "static/media/noteTaker_still.png": "/react-port/static/media/noteTaker_still.ddf0645bbc37dfff52e4.png",
     "static/media/stackoverflow-icon.png": "/react-port/static/media/stackoverflow-icon.2b57c63669410bce761f.png",
     "index.html": "/react-port/index.html",
-    "main.0faf2273.css.map": "/react-port/static/css/main.0faf2273.css.map",
-    "main.c95af23f.js.map": "/react-port/static/js/main.c95af23f.js.map",
+    "main.9cdd46fc.css.map": "/react-port/static/css/main.9cdd46fc.css.map",
+    "main.61916a27.js.map": "/react-port/static/js/main.61916a27.js.map",
     "787.510e8dec.chunk.js.map": "/react-port/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0faf2273.css",
-    "static/js/main.c95af23f.js"
+    "static/css/main.9cdd46fc.css",
+    "static/js/main.61916a27.js"
   ]
 }
