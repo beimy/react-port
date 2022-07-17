@@ -1,19 +1,30 @@
 import React from "react";
 
-function Footer() {
+function Footer(props) {
+    const {
+        sections = [],
+        setCurrentSection,
+        currentSection,
+        contactSelected,
+        setContactSelected
+    } = props;
+
+    function scrollToTop() {
+        const root = document.getElementById('root');
+        root.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <footer className="flex bg-gray-800 mt-auto justify-center py-2">
             <ul className="flex m-4 mr-2 border-r-2 border-purple-800">
                 <li className="text-lg px-2">
-                    <a href=''>HOME</a></li>
+                    <a onClick={() => {setCurrentSection('About'); setContactSelected(false); scrollToTop();}}>ABOUT</a></li>
                 <li className="text-lg px-2">
-                    <a href=''>ABOUT</a></li>
+                    <a onClick={() => {setCurrentSection('Portfolio'); setContactSelected(false); scrollToTop();}}>PORTFOLIO</a></li>
                 <li className="text-lg px-2">
-                    <a href=''>PORTFOLIO</a></li>
+                    <a onClick={() => {setCurrentSection('Contact'); setContactSelected(true); scrollToTop();}}>CONTACT</a></li>
                 <li className="text-lg px-2">
-                    <a href=''>CONTACT</a></li>
-                <li className="text-lg px-2">
-                    <a href=''>RESUME</a></li>
+                    <a onClick={() => {setCurrentSection('Resume'); setContactSelected(false); scrollToTop();}}>RESUME</a></li>
             </ul>
             
             <span className="flex">

@@ -7,6 +7,10 @@
         @apply bg-gray-900 text-slate-400
 
     }
+    
+    a {
+        @apply cursor-pointer;
+    }
 }
 
 @layer components {

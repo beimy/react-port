@@ -2,7 +2,7 @@ import React from "react";
 
 function Resume() {
     return (
-        <div className="flex relative justify-evenly border-t-4 border-white pt-20">
+        <div className="flex relative justify-evenly border-t-4 border-white py-20 mt-20">
             <h2 className="bg-gray-900 text-7xl absolute top-[-2.75rem] left-52 z-10 flex">Resume</h2>
             <div className="flex w-[35%] justify-between">
                 <ul className="p-2 pr-6">

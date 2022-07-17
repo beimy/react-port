@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useRef} from "react";
 import Single from '../Single'
 
 function Portfolio() {
+    const titleRef = useRef();
+
     return (
-        <section className=" static border-t-4 border-white">
-            <h2 className="bg-gray-900 ml-10 text-7xl -top-10 relative inline-block">Web Dev</h2>
+        <section className=" static border-t-4 border-white mt-20">
+            <h2 ref={titleRef} className="bg-gray-900 ml-10 text-7xl -top-12 relative inline-block">Portfolio</h2>
 
             <div className="flex px-3 py-3">
                 <a href="https://github.com/beimy/photo-port">
@@ -21,7 +23,7 @@ function Portfolio() {
 
             <div className="flex px-3 py-3">
                 <div className="flex flex-wrap flex-col px-5 mb-10 ml-20 self-center">
-                    <h3 className="text-4xl font-bold">The Rabbit Hole</h3>
+                    <h3 className="text-4xl pl-2 font-bold">The Rabbit Hole</h3>
                     <p className=" block skewed-border-right mt-2 p-2">This project is a command line application that creates an express.js server<br/>
                     that connects to a MongoDB database via mongoose.js. The server contains an api that simulates a basic social media application. Features <br/>
                     include creating new users, creating links between users (friends), making posts (thoughts), commenting on posts(reactions).</p>
