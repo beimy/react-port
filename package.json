@@ -1,7 +1,7 @@
 {
+  "homepage": "https://aaronrones.com",
   "name": "react-port",
   "version": "0.1.0",
-  "homepage": "https://beimy.github.io/react-port/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
