@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/react-port/static/css/main.9cdd46fc.css",
-    "main.js": "/react-port/static/js/main.61916a27.js",
-    "static/js/787.510e8dec.chunk.js": "/react-port/static/js/787.510e8dec.chunk.js",
-    "static/media/ohsnap_screenshot.PNG": "/react-port/static/media/ohsnap_screenshot.7663ba2efefba1b40960.PNG",
-    "static/media/store-backend_screenshot.PNG": "/react-port/static/media/store-backend_screenshot.77def1d25350f25f9272.PNG",
-    "static/media/hand-drawn-portait.png": "/react-port/static/media/hand-drawn-portait.97bbb8416180b200b0cc.png",
-    "static/media/nosqlbackend_screenshot.PNG": "/react-port/static/media/nosqlbackend_screenshot.be023868bf4a161ff01a.PNG",
-    "static/media/Resume_AaronRones-WebDev.pdf": "/react-port/static/media/Resume_AaronRones-WebDev.cbbd8dd1cbf257d1ea01.pdf",
-    "static/media/mvc-lesson-snapshot.PNG": "/react-port/static/media/mvc-lesson-snapshot.a058591245cd6c235394.PNG",
-    "static/media/rabbithole_screenshot.PNG": "/react-port/static/media/rabbithole_screenshot.7ae16fa4777b7aff8741.PNG",
-    "static/media/noteTaker_still.png": "/react-port/static/media/noteTaker_still.ddf0645bbc37dfff52e4.png",
-    "static/media/stackoverflow-icon.png": "/react-port/static/media/stackoverflow-icon.2b57c63669410bce761f.png",
-    "index.html": "/react-port/index.html",
-    "main.9cdd46fc.css.map": "/react-port/static/css/main.9cdd46fc.css.map",
-    "main.61916a27.js.map": "/react-port/static/js/main.61916a27.js.map",
-    "787.510e8dec.chunk.js.map": "/react-port/static/js/787.510e8dec.chunk.js.map"
+    "main.css": "/beimy.github.io/react-port/static/css/main.9cdd46fc.css",
+    "main.js": "/beimy.github.io/react-port/static/js/main.5ac47f83.js",
+    "static/js/787.510e8dec.chunk.js": "/beimy.github.io/react-port/static/js/787.510e8dec.chunk.js",
+    "static/media/ohsnap_screenshot.PNG": "/beimy.github.io/react-port/static/media/ohsnap_screenshot.7663ba2efefba1b40960.PNG",
+    "static/media/store-backend_screenshot.PNG": "/beimy.github.io/react-port/static/media/store-backend_screenshot.77def1d25350f25f9272.PNG",
+    "static/media/hand-drawn-portait.png": "/beimy.github.io/react-port/static/media/hand-drawn-portait.97bbb8416180b200b0cc.png",
+    "static/media/nosqlbackend_screenshot.PNG": "/beimy.github.io/react-port/static/media/nosqlbackend_screenshot.be023868bf4a161ff01a.PNG",
+    "static/media/Resume_AaronRones-WebDev.pdf": "/beimy.github.io/react-port/static/media/Resume_AaronRones-WebDev.cbbd8dd1cbf257d1ea01.pdf",
+    "static/media/mvc-lesson-snapshot.PNG": "/beimy.github.io/react-port/static/media/mvc-lesson-snapshot.a058591245cd6c235394.PNG",
+    "static/media/rabbithole_screenshot.PNG": "/beimy.github.io/react-port/static/media/rabbithole_screenshot.7ae16fa4777b7aff8741.PNG",
+    "static/media/noteTaker_still.png": "/beimy.github.io/react-port/static/media/noteTaker_still.ddf0645bbc37dfff52e4.png",
+    "static/media/stackoverflow-icon.png": "/beimy.github.io/react-port/static/media/stackoverflow-icon.2b57c63669410bce761f.png",
+    "index.html": "/beimy.github.io/react-port/index.html",
+    "main.9cdd46fc.css.map": "/beimy.github.io/react-port/static/css/main.9cdd46fc.css.map",
+    "main.5ac47f83.js.map": "/beimy.github.io/react-port/static/js/main.5ac47f83.js.map",
+    "787.510e8dec.chunk.js.map": "/beimy.github.io/react-port/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9cdd46fc.css",
-    "static/js/main.61916a27.js"
+    "static/js/main.5ac47f83.js"
   ]
 }
