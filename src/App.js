@@ -23,6 +23,10 @@ function App() {
     }
   ]);
 
+  useEffect(() => {
+    document.title = 'Aaron Rones'
+  })
+
   function renderSwitch(currentSection) { 
     switch(currentSection) {
       case 'About':
@@ -54,15 +58,11 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}  
       ></Nav>
-      <main className='flex flex-col align-middle min-h-screen'>
-        {!contactSelected ? (
-          <>
-          
-          {renderSwitch(currentSection)}
-          </>
-        ): (
-          <Contact></Contact>
-        )}
+      <main className=' w-screen'>
+        
+        <About />
+
+
         <Footer
         section={sections}
         setCurrentSection={setCurrentSection}
