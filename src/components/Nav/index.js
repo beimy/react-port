@@ -15,31 +15,31 @@ function Nav(props) {
 
 
     return(
-        <header className="flex border-b-4 border-popping-purp max-w-full overflow-hidden">
+        <header className="flex border-b-4 p-4 border-purple-800 max-w-full overflow-hidden">
             <nav className="flex-wrap max-w-full w-full">
                 <a className="space-y-2" data-testid='link' href="/react-port/">
-                    <span className="text-popping-purp text-3xl" data-testid='home' onClick={() => setContactSelected(false)}>Aaron Rones</span>
+                    <span className="text-purple-800 text-3xl" data-testid='home' onClick={() => setCurrentSection('About')}>Aaron Rones</span>
                 </a>
                 {/* Web Navbar */}
-                <div className="hidden md:flex align-middle float-right pr-4">
+                <div className="hidden md:flex align-middle float-right pr-">
                     <ul className="flex flex-wrap justify-end align-middle align">
                         <li className={`mx-2 ${currentSection === 'About' && 'navActive'}`}>
-                            <a className=" text-3xl" data-testid="about" onClick={() => {setCurrentSection('About'); setContactSelected(false)}}>
+                            <a className=" text-3xl" data-testid="about" onClick={() => {setCurrentSection('About');}}>
                                 About Me
                             </a>
                         </li>
                         <li className={`mx-2 ${currentSection === 'Portfolio' && 'navActive'}`}>
-                            <a className=" text-3xl" data-testid="about" onClick={() => {setCurrentSection('Portfolio'); setContactSelected(false);}}>
+                            <a className=" text-3xl" data-testid="about" onClick={() => {setCurrentSection('Portfolio');}}>
                                 Portfolio
                             </a>
                         </li>
                         <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                            <a className=" text-3xl" data-testid="about" href="#contact" onClick={() => {setContactSelected(true); setCurrentSection('Contact');}}>
+                            <a className=" text-3xl" data-testid="about" href="#contact" onClick={() => {setCurrentSection('Contact');}}>
                                 Contact
                             </a>
                         </li>
                         <li className={`ml-2 ${currentSection === 'Resume' && 'navActive'}`}>
-                            <a className=" text-3xl" data-testid="about" onClick={() => {setCurrentSection('Resume'); setContactSelected(false);}}>
+                            <a className=" text-3xl" data-testid="about" onClick={() => {setCurrentSection('Resume');}}>
                                 Resume
                             </a>
                         </li>
@@ -53,9 +53,9 @@ function Nav(props) {
                         menuOpen={menuOpen}
                     />}
                     <button className="space-y-2 z-50 relative" onClick={() => {menuOpen ? setMenuOpen(false) : setMenuOpen(true)}}>
-                        <span className="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
-                        <span className="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
-                        <span className="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+                        <span className="block w-8 h-0.5 bg-gray-400"></span>
+                        <span className="block w-8 h-0.5 bg-gray-400"></span>
+                        <span className="block w-8 h-0.5 bg-gray-400"></span>
                     </button> 
                 </div>
                 

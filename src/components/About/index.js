@@ -7,18 +7,18 @@ function About(props) {
     } = props;
     
     return(
-        <section className='container flex justify-center pt-36 pb-80'>
-            <div className='flex flex-wrap columns-1 relative'>
-                <h3 className='w-[60%] pl-2  text-xl'>Hi There,</h3>
-                <p className='p-2 max-w-xl skewed-border-left h-auto bg-off-black'>I'm Aaron Rones. A <a 
+        <section className='flex justify-center pt-1/12 pb-80 mx-1/12 max-h-min'>
+            <div className='flex flex-col max-h-min max-w-lg columns-1 justify-center z-10'>
+                <h3 className='inline-block max-h-1/12 mb-2'>Hi There,</h3>
+                <p className='p-2 skewed-border-left bg-gray-900 min-h-min'>I'm Aaron Rones. A <a 
                     onClick={() => {setCurrentSection('Portfolio'); setContactSelected(false);}}
-                    className='border-b border-popping-purp'>Full Stack Web Developer</a> I really enjoy crafting experiences for people with the help of technology. I graduated from UCF with a degree in Game Design in 2020. <br/>
-                    <br />Now I'm taking what I learned about digital content creation there and applying it to Web Development
+                    className='border-b border-purple-800'>Full Stack Web Developer</a> I really enjoy crafting experiences for people with the help of technology. I graduated from UCF with a degree in Game Design in 2020. <br/>
+                    <br />Now I'm taking what I learned about digital content creation there and applying it to Web Development.
                 </p>
             </div>
-            {/* <div className='relative'>
-                <img className='max-h-[450px] p-2 skewed-border-right' src={require(`../../assets/hand-drawn-portait.png`)}/>
-            </div> */}
+            <div className='relative'>
+                <img className='max-h-[500px] p-8 skewed-border-right' src={require(`../../assets/favicon.png`)}/>
+            </div>
         </section>
     )
 }

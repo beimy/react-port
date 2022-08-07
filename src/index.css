@@ -9,7 +9,7 @@
     }
 
     html, body {
-        @apply bg-off-black text-good-grey m-0 p-0 overflow-hidden
+        @apply bg-gray-900 text-gray-400 m-0 p-0 overflow-hidden
 
     }
 
@@ -24,11 +24,15 @@
     a:hover {
         @apply text-purple-800
     }
+
+    p {
+        @apply text-sm md:text-lg
+    }
 }
 
 @layer components {
     .contact-input {
-        @apply h-[50px] bg-good-grey text-base border border-purple-800 px-5 w-full m-1
+        @apply h-[50px] bg-gray-400 text-base border border-purple-800 px-5 w-full m-1
     }
 
     .contact-li {
@@ -44,7 +48,7 @@
         -moz-transform: skewX(-10deg);
         -ms-transform: skewX(-10deg);
         transform: skewX(-10deg);
-        @apply border-popping-purp border
+        @apply border-purple-800 border
     }
 
     .skewed-border-left {
@@ -52,15 +56,15 @@
         -moz-transform: skewX(10deg);
         -ms-transform: skewX(10deg);
         transform: skewX(10deg);
-        @apply border-popping-purp border
+        @apply border-purple-800 border
     }
 
     .navActive {
-        @apply border-popping-purp
+        @apply border-purple-800
     }
 
     .mobile-nav-btn {
-        @apply text-4xl uppercase pl-8 pb-4 font-bold 
+        @apply text-4xl uppercase px-2 pb-4 font-bold 
     }
 }
 

@@ -60,7 +60,7 @@ function App() {
           setContactSelected={setContactSelected}  
         ></Nav>
         
-        {/* <About /> */}
+        <About />
 
 
         {/* <Footer
