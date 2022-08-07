@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html, body {
-        @apply bg-gray-900 text-slate-400
 
+@layer base {
+    * {
+        @apply font-din
+    }
+
+    html, body {
+        @apply bg-off-black text-good-grey m-0 p-0 overflow-hidden
+
+    }
+
+    body {
+        @apply h-screen w-screen
     }
     
     a {
@@ -19,7 +28,7 @@
 
 @layer components {
     .contact-input {
-        @apply h-[50px] bg-slate-600 text-base border border-purple-800 px-5 w-full m-1
+        @apply h-[50px] bg-good-grey text-base border border-purple-800 px-5 w-full m-1
     }
 
     .contact-li {
@@ -35,7 +44,7 @@
         -moz-transform: skewX(-10deg);
         -ms-transform: skewX(-10deg);
         transform: skewX(-10deg);
-        @apply border-purple-800 border
+        @apply border-popping-purp border
     }
 
     .skewed-border-left {
@@ -43,11 +52,15 @@
         -moz-transform: skewX(10deg);
         -ms-transform: skewX(10deg);
         transform: skewX(10deg);
-        @apply border-purple-800 border
+        @apply border-popping-purp border
     }
 
     .navActive {
-        @apply text-purple-800
+        @apply border-popping-purp
+    }
+
+    .mobile-nav-btn {
+        @apply text-4xl uppercase pl-8 pb-4 font-bold 
     }
 }
 

@@ -19,6 +19,15 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontFamily: {
+        'din': ['Din', 'sans-serif']
+      },
+      colors: {
+        'popping-purp': '#4f03a9',
+        'good-grey': '#656565',
+        'more-grey': '#434343',
+        'off-black': '#191919',
+      },
       spacing: {
         '1/2': '50%',
         '1/3': '33.333333%',

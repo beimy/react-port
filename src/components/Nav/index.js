@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import Menu from '../Menu';
 
 function Nav(props) {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
     const {
         sections = [],
         setCurrentSection,
@@ -11,10 +15,10 @@ function Nav(props) {
 
 
     return(
-        <header className="flex-wrap p-5 border-b-4 border-purple-800 w-screen">
-            <nav className="">
+        <header className="flex border-b-4 border-popping-purp max-w-full overflow-hidden">
+            <nav className="flex-wrap max-w-full w-full">
                 <a className="space-y-2" data-testid='link' href="/react-port/">
-                    <span className="text-purple-800 text-3xl" data-testid='home' onClick={() => setContactSelected(false)}>Aaron Rones</span>
+                    <span className="text-popping-purp text-3xl" data-testid='home' onClick={() => setContactSelected(false)}>Aaron Rones</span>
                 </a>
                 {/* Web Navbar */}
                 <div className="hidden md:flex align-middle float-right pr-4">
@@ -42,17 +46,19 @@ function Nav(props) {
                     </ul>
                 </div>
                 {/* Mobile Navbar */}
-                <div className="md:hidden float-right pr-4 pt-2">
-                    <button className="space-y-2">
+                <div className="md:hidden float-right pt-2">
+                    {<Menu
+                        setCurrentSection={setCurrentSection}
+                        currentSection={currentSection}
+                        menuOpen={menuOpen}
+                    />}
+                    <button className="space-y-2 z-50 relative" onClick={() => {menuOpen ? setMenuOpen(false) : setMenuOpen(true)}}>
                         <span className="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
                         <span className="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
                         <span className="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
-                    </button>
-                    
+                    </button> 
                 </div>
-                <div className="hidden mobile-menu">
-                    
-			    </div>
+                
             </nav>
         </header>
     )

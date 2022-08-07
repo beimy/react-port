@@ -51,25 +51,25 @@ function App() {
 
   return (
     <Fragment>
-      <Nav
-        section={sections}
-        setCurrentSection={setCurrentSection}
-        currentSection={currentSection}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}  
-      ></Nav>
-      <main className=' w-screen'>
+      <main className='w-screen'>
+        <Nav
+          section={sections}
+          setCurrentSection={setCurrentSection}
+          currentSection={currentSection}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}  
+        ></Nav>
         
-        <About />
+        {/* <About /> */}
 
 
-        <Footer
+        {/* <Footer
         section={sections}
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-        ></Footer>
+        ></Footer> */}
       </main>
     </Fragment>
   );
