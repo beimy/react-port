@@ -9,12 +9,12 @@
     }
 
     html, body {
-        @apply bg-gray-900 text-gray-400 m-0 p-0 overflow-hidden
+        @apply bg-gray-900 text-gray-400 m-0 p-0
 
     }
 
     body {
-        @apply h-screen w-screen
+        @apply w-screen
     }
     
     a {

@@ -15,7 +15,7 @@ function Nav(props) {
 
 
     return(
-        <header className="flex border-b-4 p-4 border-purple-800 max-w-full overflow-hidden">
+        <header className="flex border-b-4 p-4 pr-6 border-purple-800 max-w-[full] overflow-hidden">
             <nav className="flex-wrap max-w-full w-full">
                 <a className="space-y-2" data-testid='link' href="/react-port/">
                     <span className="text-purple-800 text-3xl" data-testid='home' onClick={() => setCurrentSection('About')}>Aaron Rones</span>

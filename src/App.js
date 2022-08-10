@@ -23,6 +23,10 @@ function App() {
     }
   ]);
 
+  const [contactSelected, setContactSelected] = useState(false);
+
+  const [currentSection, setCurrentSection] = useState('About');
+
   useEffect(() => {
     document.title = 'Aaron Rones'
   })
@@ -32,26 +36,24 @@ function App() {
       case 'About':
         return <About
         setCurrentSection={setCurrentSection}
-        setContactSelected={setContactSelected}
         ></About>;
       case 'Portfolio':
-        return <Portfolio></Portfolio>;
+        return <Portfolio
+        setCurrentSection={setCurrentSection}></Portfolio>;
       case 'Resume':
-        return <Resume></Resume>;
+        return <Resume
+        setCurrentSection={setCurrentSection}></Resume>;
       case 'Contact':
-        return <Contact></Contact>;
+        return <Contact
+        setCurrentSection={setCurrentSection}></Contact>;
       default:
         break;
     }
   }
 
-  const [contactSelected, setContactSelected] = useState(false);
-
-  const [currentSection, setCurrentSection] = useState('About');
-
   return (
     <Fragment>
-      <main className='w-screen'>
+      <main className='max-w-screen overflow-x-hidden'>
         <Nav
           section={sections}
           setCurrentSection={setCurrentSection}
@@ -60,7 +62,18 @@ function App() {
           setContactSelected={setContactSelected}  
         ></Nav>
         
-        <About />
+        <About
+          setCurrentSection={setCurrentSection}>
+        </About>
+        <Portfolio
+          setCurrentSection={setCurrentSection}>
+        </Portfolio>
+        {/* <Resume
+          setCurrentSection={setCurrentSection}>
+        </Resume>
+        <Contact
+          setCurrentSection={setCurrentSection}>
+        </Contact> */}
 
 
         {/* <Footer
