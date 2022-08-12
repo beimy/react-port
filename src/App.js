@@ -53,7 +53,7 @@ function App() {
 
   return (
     <Fragment>
-      <main className='max-w-screen overflow-x-hidden'>
+      <main className=' max-w-full overflow-x-hidden'>
         <Nav
           section={sections}
           setCurrentSection={setCurrentSection}
