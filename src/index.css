@@ -9,12 +9,12 @@
     }
 
     html, body {
-        @apply bg-gray-900 text-gray-400 m-0 p-0
+        @apply bg-gray-900 text-gray-400 m-0 p-0 overflow-x-hidden
 
     }
 
     body {
-        @apply w-screen
+        @apply max-w-full
     }
     
     a {
@@ -32,7 +32,7 @@
 
 @layer components {
     .contact-input {
-        @apply h-[50px] bg-gray-400 text-base border border-purple-800 px-5 w-full m-1
+        @apply h-[50px] bg-gray-400 text-base text-black border border-purple-800 px-5 w-full m-1
     }
 
     .contact-li {

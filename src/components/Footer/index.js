@@ -14,17 +14,20 @@ function Footer(props) {
         root.scrollIntoView({ behavior: 'smooth' });
     }
 
+    function scrollToSection(section) {
+        const target = document.getElementById(section);
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
-        <footer className="flex bg-gray-800 mt-auto justify-center py-2">
+        <footer className="hidden md:flex bg-gray-800 mt-auto justify-center py-2">
             <ul className="flex m-4 mr-2 border-r-2 border-purple-800">
                 <li className="text-lg px-2">
-                    <a onClick={() => {setCurrentSection('About'); setContactSelected(false); scrollToTop();}}>ABOUT</a></li>
+                    <a onClick={() => {setCurrentSection('About'); setContactSelected(false); scrollToSection('about-section');}}>ABOUT</a></li>
                 <li className="text-lg px-2">
-                    <a onClick={() => {setCurrentSection('Portfolio'); setContactSelected(false); scrollToTop();}}>PORTFOLIO</a></li>
+                    <a onClick={() => {setCurrentSection('Portfolio'); setContactSelected(false); scrollToSection('porfolio-section');}}>PORTFOLIO</a></li>
                 <li className="text-lg px-2">
-                    <a onClick={() => {setCurrentSection('Contact'); setContactSelected(true); scrollToTop();}}>CONTACT</a></li>
-                <li className="text-lg px-2">
-                    <a onClick={() => {setCurrentSection('Resume'); setContactSelected(false); scrollToTop();}}>RESUME</a></li>
+                    <a onClick={() => {setCurrentSection('Contact'); setContactSelected(true); scrollToSection('contact-section');}}>CONTACT</a></li>
             </ul>
             
             <span className="flex">

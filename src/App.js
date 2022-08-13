@@ -52,8 +52,8 @@ function App() {
   }
 
   return (
-    <Fragment>
-      <main className=' max-w-full overflow-x-hidden'>
+    <Fragment className='overflow-x-hidden'>
+      <main className=' w-full max-w-full overflow-x-hidden'>
         <Nav
           section={sections}
           setCurrentSection={setCurrentSection}
@@ -68,21 +68,18 @@ function App() {
         <Portfolio
           setCurrentSection={setCurrentSection}>
         </Portfolio>
-        {/* <Resume
-          setCurrentSection={setCurrentSection}>
-        </Resume>
         <Contact
           setCurrentSection={setCurrentSection}>
-        </Contact> */}
+        </Contact>
 
 
-        {/* <Footer
+        <Footer
         section={sections}
         setCurrentSection={setCurrentSection}
         currentSection={currentSection}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-        ></Footer> */}
+        ></Footer>
       </main>
     </Fragment>
   );

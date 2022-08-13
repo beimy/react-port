@@ -5,11 +5,19 @@ const Menu = (props) => {
     const {
         currentSection,
         setCurrentSection,
-        menuOpen
+        menuOpen,
+        setMenuOpen
     } = props;
 
     function setSection(section) {
         setCurrentSection(section);
+    }
+
+    function scrollToSection(section) {
+        setMenuOpen(false);
+        const target = document.getElementById(section);
+        target.scrollIntoView({ behavior: 'smooth' });
+        setSection(section);
     }
 
     return (
@@ -19,10 +27,9 @@ const Menu = (props) => {
                         flex flex-col justify-center h-screen 
                         text-right p-2 absolute top-0 right-0 z-20 bg-more-grey`}
                         >
-            <button className='mobile-nav-btn' onClick={() => {setCurrentSection('About')}}>About Me</button>
-            <button className='mobile-nav-btn' onClick={() => {setCurrentSection('Portfolio')}}>Portfolio</button>
-            <button className='mobile-nav-btn' onClick={() => {setCurrentSection('Contact')}}>Contact</button>
-            <button className='mobile-nav-btn' onClick={() => {setCurrentSection('Resume')}}>Resume</button>
+            <button className='mobile-nav-btn' onClick={() => {scrollToSection('about-section')}}>About Me</button>
+            <button className='mobile-nav-btn' onClick={() => {scrollToSection('porfolio-section')}}>Portfolio</button>
+            <button className='mobile-nav-btn' onClick={() => {scrollToSection('contact-section')}}>Contact</button>
         </nav>
     )
 }

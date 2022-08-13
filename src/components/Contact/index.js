@@ -37,22 +37,22 @@ function Contact() {
     }
 
     return (
-        <div className="flex flex-grow relative border-t-4 border-white mt-20 justify-center">
-            <h2 className="bg-gray-900 text-7xl absolute top-[-2.75rem] right-52 z-10 flex">Let's Work Together</h2>
-            <section className="container flex justify-between my-20 px-20 ">
-                <form id='contact-form' className="min-w-[50%] max-w-[600px] " onSubmit={handleSubmit}>
-                    <ul className="min-w-[50%] max-w-[600px]">
-                        <li className="contact-li-half">    
-                            <input type="text" className="contact-input" defaultValue={name} placeholder='Name' onBlur={handleChange} name="name" />
+        <div className="flex scroll-m-16 relative border-t-4 border-white mt-20 justify-center" id="contact-section">
+            <h2 className="bg-gray-900 text-2xl absolute -top-5 right-5 md:top-[-2.75rem] md:right-52 md:text-7xl z-10 whitespace-nowrap">Let's Work Together</h2>
+            <section className="flex flex-col-reverse md:justify-between justify-center my-20 px-[5%]">
+                <form id='contact-form' className="" onSubmit={handleSubmit}>
+                    <ul className="">
+                        <li className="md:contact-li-half">    
+                            <input type="text" className="contact-input" defaultValue={'Your Name'} placeholder='Name' onBlur={handleChange} name="name" />
                         </li>
-                        <li className="contact-li-half">
-                            <input type="email" className="contact-input" defaultValue={email} placeholder='Email' onBlur={handleChange} name="email" />
+                        <li className="md:contact-li-half">
+                            <input type="email" className="contact-input" defaultValue={'Your Email'} placeholder='Email' onBlur={handleChange} name="email" />
                         </li>
-                        <li className="mr-4">
-                            <input name="subject" className='contact-input w-full' defaultValue={subject} placeholder='Subject' onBlur={handleChange} rows="1"  />
+                        <li className="md:mr-4">
+                            <input name="subject" className='contact-input w-full' defaultValue={'Subject'} placeholder='Subject' onBlur={handleChange} rows="1"  />
                         </li>
-                        <li className="mr-4">
-                            <textarea name="message" className="contact-input w-full h-auto" defaultValue={message} placeholder='Message' onBlur={handleChange} rows='5'  />
+                        <li className="md:mr-4">
+                            <textarea name="message" className="contact-input w-full h-auto" defaultValue={'Message'} placeholder='Message' onBlur={handleChange} rows='5'  />
                         </li>
                         <li>
                             {errorMessage && (
@@ -62,11 +62,14 @@ function Contact() {
                             )}
                         </li>
                         <li>    
-                            <button type='submit' className="float-right bg-purple-800 w-36 h-12 border-2 border-slate-600 mr-3">Submit</button>
+                            <button type='submit' className="float-right bg-purple-800 w-36 h-12 border-2 border-slate-600">Submit</button>
                         </li>
                     </ul>
                 </form>
-                <p>Feel free to reach out for anything from buisness inquiries to general questions.<br/> I'm always looking for new connections.</p>
+                <span className="px-1 pb-2">Download my full resume 
+                    <a className=" font-bold" href={require('../../assets/Resume_AaronRones-WebDev.pdf')} download='AaronRones_Resume_WebDev.pdf'> here</a>
+                </span>
+                <p className="px-1 pb-2">Feel free to reach out for anything from buisness inquiries to general questions. I'm always looking for new connections.</p>
             </section>
 
         </div>
