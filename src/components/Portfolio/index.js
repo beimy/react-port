@@ -36,7 +36,7 @@ function Portfolio(props) {
     ];
 
     return (
-        <section className="relative scroll-m-16 border-t-4 border-white mt-20 max-w-full p-2 md:px-10" id="porfolio-section">
+        <section className="relative scroll-m-24 md:scroll-m-32 border-t-4 border-white mt-20 max-w-full p-2 md:px-10" id="porfolio-section">
             <h2 ref={titleRef} className="bg-gray-900 ml-10 text-2xl md:text-7xl md:-top-12 -top-5 md:relative absolute inline-block">Portfolio</h2>
 
             <div className="flex p-2 pt-8 md:pr-10 flex-row-reverse max-w-full">

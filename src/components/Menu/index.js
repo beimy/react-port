@@ -25,7 +25,7 @@ const Menu = (props) => {
                          max-w-full
                         transition-transform
                         flex flex-col justify-center h-screen 
-                        text-right p-2 absolute top-0 right-0 z-20 bg-more-grey`}
+                        text-right p-2 fixed top-0 right-0 z-50 bg-more-grey`}
                         >
             <button className='mobile-nav-btn' onClick={() => {scrollToSection('about-section')}}>About Me</button>
             <button className='mobile-nav-btn' onClick={() => {scrollToSection('porfolio-section')}}>Portfolio</button>

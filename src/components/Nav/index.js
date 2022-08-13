@@ -20,7 +20,7 @@ function Nav(props) {
 
 
     return(
-        <header className="flex border-b-4 p-4 pr-6 border-purple-800 max-w-[full] overflow-hidden sticky top-0 z-50">
+        <header className="flex border-b-4 p-4 pr-6 border-purple-800 max-w-full w-full overflow-hidden fixed top-0 z-50 bg-gray-900">
             <nav className="flex-wrap max-w-full w-full">
                 <a className="space-y-2" data-testid='link' href="/react-port/">
                     <span className="text-purple-800 text-3xl" data-testid='home' onClick={() => setCurrentSection('About')}>Aaron Rones</span>
@@ -46,7 +46,7 @@ function Nav(props) {
                     </ul>
                 </div>
                 {/* Mobile Navbar */}
-                <div className="md:hidden float-right pt-2">
+                <div className="md:hidden float-right pt-2 z-50">
                     {<Menu
                         setCurrentSection={setCurrentSection}
                         currentSection={currentSection}
