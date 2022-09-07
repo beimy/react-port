@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcfc2f67.css",
-    "main.js": "/static/js/main.214f8335.js",
+    "main.css": "/static/css/main.ac949e8d.css",
+    "main.js": "/static/js/main.d89677ef.js",
     "static/js/787.510e8dec.chunk.js": "/static/js/787.510e8dec.chunk.js",
+    "static/media/fridge-friend-still_01.PNG": "/static/media/fridge-friend-still_01.96982333ccdae45543f2.PNG",
     "static/media/ohsnap_screenshot.PNG": "/static/media/ohsnap_screenshot.7663ba2efefba1b40960.PNG",
     "static/media/fridge-friend_snap.PNG": "/static/media/fridge-friend_snap.84cb3a5ec123dd552a06.PNG",
+    "static/media/foraging-still_01.PNG": "/static/media/foraging-still_01.9545d16146b619acea7e.PNG",
     "static/media/store-backend_screenshot.PNG": "/static/media/store-backend_screenshot.77def1d25350f25f9272.PNG",
     "static/media/hand-drawn-portait.png": "/static/media/hand-drawn-portait.97bbb8416180b200b0cc.png",
     "static/media/favicon.png": "/static/media/favicon.65c11d7f115356febbe7.png",
@@ -15,12 +17,12 @@
     "static/media/noteTaker_still.png": "/static/media/noteTaker_still.ddf0645bbc37dfff52e4.png",
     "static/media/stackoverflow-icon.png": "/static/media/stackoverflow-icon.2b57c63669410bce761f.png",
     "index.html": "/index.html",
-    "main.dcfc2f67.css.map": "/static/css/main.dcfc2f67.css.map",
-    "main.214f8335.js.map": "/static/js/main.214f8335.js.map",
+    "main.ac949e8d.css.map": "/static/css/main.ac949e8d.css.map",
+    "main.d89677ef.js.map": "/static/js/main.d89677ef.js.map",
     "787.510e8dec.chunk.js.map": "/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcfc2f67.css",
-    "static/js/main.214f8335.js"
+    "static/css/main.ac949e8d.css",
+    "static/js/main.d89677ef.js"
   ]
 }
