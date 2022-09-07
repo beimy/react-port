@@ -4,7 +4,7 @@ function Single({name, description, pic, techs, liveLink, gitLink}) {
 
 
     return(
-        <article className="mb-16 md:px-10" key={name}>
+        <article className="mb-16 md:px-10 max-w-[1360px] mx-auto" key={name}>
             <div className="flex align-middle">
                 <div className="md:max-w-[50%] max-w-[80%]">
                     <h4 className="text-lg font-bold md:hidden">{name}</h4>
