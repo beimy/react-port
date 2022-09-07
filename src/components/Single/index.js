@@ -1,6 +1,6 @@
 import React from "react";
 
-function Single({name, description, pic, techs, link}) {
+function Single({name, description, pic, techs, liveLink, gitLink}) {
 
 
     return(
@@ -8,22 +8,27 @@ function Single({name, description, pic, techs, link}) {
             <div className="flex align-middle">
                 <div className="md:max-w-[50%] max-w-[80%]">
                     <h4 className="text-lg font-bold md:hidden">{name}</h4>
-                    <a className="" href={link} target={'_blank'}>
+                    <a className="" href={liveLink} target={'_blank'}>
                         <img
                             src={require(`../../assets/${pic}`)}
                             alt={name}
                             className='p-2 border border-purple-800'
                         />
                     </a>
+                    {gitLink && 
+                        <span className="text-sm">Link to github repo 
+                            <a className="text-purple-800 text-sm" href={gitLink} target='_blank'> here...</a>
+                        </span>
+                    }
                 </div>
                 <div className="hidden md:block ml-2 max-w-[50%]">
                     <h4 className="border-b border-purple-800 text-lg font-bold">{name}</h4>
                     <p>{description}</p>
                 </div>
             </div>
-            <div className="flex ml-1 mt-2 max-w-full">
+            <div className="flex mt-2 max-w-full">
                 <p className="hidden md:block">Technologies Used:</p>
-                <ul className="flex flex-wrap pr-2 overflow-visible">
+                <ul className="flex flex-wrap overflow-visible">
                     {techs.map((tech, index, array) => (
                         <li className={`px-1 ${index == array.length -1 ? '' : 'border-r'}`}>
                             <p className={``}>{tech}</p>
