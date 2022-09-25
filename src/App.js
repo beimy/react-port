@@ -52,7 +52,7 @@ function App() {
   }
 
   return (
-    <Fragment className='overflow-x-hidden'>
+    <Fragment>
       <main className=' w-full max-w-full overflow-x-hidden'>
         <Nav
           section={sections}

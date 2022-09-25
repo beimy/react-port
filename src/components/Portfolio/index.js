@@ -57,6 +57,7 @@ function Portfolio(props) {
             <div className=" pt-1/12 px-[4%]">
                 {projects.map(project => (
                     <Single
+                        key={project.name}
                         name={project.name}
                         description={project.description}
                         pic={project.pic}

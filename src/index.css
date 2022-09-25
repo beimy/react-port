@@ -32,7 +32,11 @@
 
 @layer components {
     .contact-input {
-        @apply h-[50px] bg-gray-600 text-base text-black border border-purple-800 px-5 w-full m-1 ml-0 overflow-hidden
+        @apply h-[50px] bg-gray-600 text-base border border-purple-800 px-5 w-full m-1 ml-0 overflow-hidden placeholder-opacity-0
+    }
+
+    ::placeholder {
+        @apply placeholder-opacity-50
     }
 
     .contact-li {

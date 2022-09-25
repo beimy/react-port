@@ -30,7 +30,7 @@ function Single({name, description, pic, techs, liveLink, gitLink}) {
                 <p className="hidden md:block">Technologies Used:</p>
                 <ul className="flex flex-wrap overflow-visible">
                     {techs.map((tech, index, array) => (
-                        <li className={`px-1 ${index == array.length -1 ? '' : 'border-r'}`}>
+                        <li key={`${name}`+`${index}`} className={`px-1 ${index == array.length -1 ? '' : 'border-r'}`}>
                             <p className={``}>{tech}</p>
                         </li>
                     ))}
