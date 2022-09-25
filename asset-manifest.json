@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac949e8d.css",
-    "main.js": "/static/js/main.d89677ef.js",
+    "main.css": "/static/css/main.e58dd4d8.css",
+    "main.js": "/static/js/main.a0016bb8.js",
     "static/js/787.510e8dec.chunk.js": "/static/js/787.510e8dec.chunk.js",
     "static/media/fridge-friend-still_01.PNG": "/static/media/fridge-friend-still_01.96982333ccdae45543f2.PNG",
     "static/media/ohsnap_screenshot.PNG": "/static/media/ohsnap_screenshot.7663ba2efefba1b40960.PNG",
@@ -17,12 +17,12 @@
     "static/media/noteTaker_still.png": "/static/media/noteTaker_still.ddf0645bbc37dfff52e4.png",
     "static/media/stackoverflow-icon.png": "/static/media/stackoverflow-icon.2b57c63669410bce761f.png",
     "index.html": "/index.html",
-    "main.ac949e8d.css.map": "/static/css/main.ac949e8d.css.map",
-    "main.d89677ef.js.map": "/static/js/main.d89677ef.js.map",
+    "main.e58dd4d8.css.map": "/static/css/main.e58dd4d8.css.map",
+    "main.a0016bb8.js.map": "/static/js/main.a0016bb8.js.map",
     "787.510e8dec.chunk.js.map": "/static/js/787.510e8dec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac949e8d.css",
-    "static/js/main.d89677ef.js"
+    "static/css/main.e58dd4d8.css",
+    "static/js/main.a0016bb8.js"
   ]
 }
